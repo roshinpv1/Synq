@@ -898,11 +898,11 @@ function drawMap() {
     const h = canvas.height;
     
     // Clear screen
-    ctx.fillStyle = "#050811";
+    ctx.fillStyle = "#EEF0FA";
     ctx.fillRect(0, 0, w, h);
     
-    // 1. Draw glowing grid
-    ctx.strokeStyle = "rgba(139, 92, 246, 0.05)";
+    // 1. Draw subtle grid
+    ctx.strokeStyle = "rgba(99, 88, 210, 0.08)";
     ctx.lineWidth = 1;
     
     const gridSize = 20;
@@ -962,13 +962,13 @@ function drawMap() {
         if (state.selectedPin && state.selectedPin.id === p.id) {
             ctx.beginPath();
             ctx.arc(cx, cy, 9, 0, Math.PI * 2);
-            ctx.strokeStyle = "#FFFFFF";
+            ctx.strokeStyle = "rgba(55, 48, 163, 0.6)";
             ctx.lineWidth = 1.5;
             ctx.stroke();
         }
 
         // Draw node labels subtly
-        ctx.fillStyle = "#9CA3AF";
+        ctx.fillStyle = "#4B5563";
         ctx.font = "8px Outfit";
         ctx.textAlign = "center";
         ctx.fillText(p.name, cx, cy - 10);

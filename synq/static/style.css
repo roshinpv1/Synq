@@ -1,29 +1,58 @@
 /* ==========================================================================
-   Synq CSS Style Sheets - Premium Dark Theme & Glassmorphism Design
+   Synq CSS Style Sheets - Elegant Light Theme
    ========================================================================== */
 
 :root {
-    /* Harmonious Cyber/Slate HSL Color Palette */
-    --bg-dark: hsl(222, 40%, 7%);
-    --card-bg: rgba(17, 24, 39, 0.65);
-    --border-color: rgba(255, 255, 255, 0.08);
-    --border-hover: rgba(255, 255, 255, 0.15);
-    
-    --primary: hsl(258, 90%, 66%);     /* Cyber Purple */
-    --primary-glow: rgba(139, 92, 246, 0.3);
-    --primary-hover: hsl(258, 95%, 72%);
-    
-    --success: hsl(162, 76%, 45%);     /* Emerald Green */
-    --success-glow: rgba(16, 185, 129, 0.2);
-    
-    --warning: hsl(348, 89%, 60%);     /* Neon Coral/Red */
-    --warning-glow: rgba(244, 63, 94, 0.2);
+    /* Light Surface Palette */
+    --bg-page: hsl(220, 25%, 97%);
+    --bg-surface: #FFFFFF;
+    --bg-subtle: hsl(220, 20%, 95%);
+    --bg-inset: hsl(220, 18%, 92%);
 
-    --text-main: #F3F4F6;
-    --text-muted: #9CA3AF;
-    --text-dark: #1F2937;
-    
-    --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    /* Card & Border */
+    --card-bg: #FFFFFF;
+    --border-color: hsl(220, 15%, 88%);
+    --border-hover: hsl(220, 15%, 75%);
+    --border-focus: var(--primary);
+
+    /* Brand Accent - Deep Indigo / Violet */
+    --primary: hsl(245, 75%, 55%);
+    --primary-light: hsl(245, 85%, 96%);
+    --primary-hover: hsl(245, 80%, 48%);
+    --primary-border: hsl(245, 70%, 80%);
+
+    /* Success - Teal Green */
+    --success: hsl(162, 65%, 38%);
+    --success-light: hsl(162, 60%, 94%);
+    --success-border: hsl(162, 55%, 70%);
+
+    /* Warning / Amber */
+    --warning: hsl(38, 90%, 48%);
+    --warning-light: hsl(38, 90%, 95%);
+
+    /* Danger */
+    --danger: hsl(3, 72%, 52%);
+    --danger-light: hsl(3, 72%, 95%);
+    --danger-border: hsl(3, 65%, 75%);
+
+    /* Typography */
+    --text-main: hsl(222, 30%, 12%);
+    --text-secondary: hsl(222, 15%, 38%);
+    --text-muted: hsl(222, 12%, 58%);
+    --text-placeholder: hsl(222, 10%, 72%);
+
+    /* Shadows */
+    --shadow-xs: 0 1px 3px rgba(20, 20, 60, 0.06), 0 1px 2px rgba(20, 20, 60, 0.04);
+    --shadow-sm: 0 2px 8px rgba(20, 20, 60, 0.08), 0 1px 3px rgba(20, 20, 60, 0.05);
+    --shadow-md: 0 4px 20px rgba(20, 20, 60, 0.10), 0 2px 6px rgba(20, 20, 60, 0.06);
+    --shadow-lg: 0 8px 40px rgba(20, 20, 60, 0.12), 0 3px 10px rgba(20, 20, 60, 0.07);
+    --shadow-focus: 0 0 0 3px hsl(245, 75%, 90%);
+
+    --transition: all 0.22s cubic-bezier(0.4, 0, 0.2, 1);
+    --radius-sm: 8px;
+    --radius-md: 12px;
+    --radius-lg: 16px;
+    --radius-xl: 20px;
 }
 
 * {
@@ -33,16 +62,17 @@
 }
 
 body {
-    background-color: var(--bg-dark);
+    background-color: var(--bg-page);
     color: var(--text-main);
     font-family: 'Outfit', sans-serif;
     min-height: 100vh;
     overflow-x: hidden;
     position: relative;
+    -webkit-font-smoothing: antialiased;
 }
 
 /* ==========================================================================
-   Background Glowing Orbs
+   Subtle Decorative Background
    ========================================================================== */
 .glow-bg {
     position: fixed;
@@ -58,60 +88,62 @@ body {
 .glow-orb {
     position: absolute;
     border-radius: 50%;
-    filter: blur(120px);
-    opacity: 0.15;
-    animation: orbMove 25s infinite alternate ease-in-out;
+    filter: blur(160px);
+    opacity: 0.06;
+    animation: orbMove 30s infinite alternate ease-in-out;
 }
 
 .orb-1 {
-    width: 500px;
-    height: 500px;
+    width: 600px;
+    height: 600px;
     background-color: var(--primary);
-    top: -100px;
-    left: -100px;
+    top: -200px;
+    left: -150px;
 }
 
 .orb-2 {
-    width: 600px;
-    height: 600px;
-    background-color: var(--success);
-    bottom: -150px;
-    right: -100px;
-    animation-delay: -5s;
-    animation-duration: 30s;
+    width: 700px;
+    height: 700px;
+    background-color: hsl(162, 65%, 45%);
+    bottom: -250px;
+    right: -200px;
+    animation-delay: -8s;
+    animation-duration: 35s;
 }
 
 .orb-3 {
-    width: 400px;
-    height: 400px;
-    background-color: #3B82F6;
+    width: 500px;
+    height: 500px;
+    background-color: hsl(210, 80%, 55%);
     top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
-    animation-delay: -10s;
-    animation-duration: 20s;
+    animation-delay: -15s;
+    animation-duration: 25s;
 }
 
 @keyframes orbMove {
     0% { transform: translate(0, 0) scale(1); }
-    50% { transform: translate(80px, 50px) scale(1.1); }
-    100% { transform: translate(-40px, -80px) scale(0.9); }
+    50% { transform: translate(60px, 40px) scale(1.05); }
+    100% { transform: translate(-30px, -60px) scale(0.95); }
 }
 
 /* ==========================================================================
    Navigation Bar
    ========================================================================== */
 .navbar {
-    background: rgba(11, 15, 25, 0.8);
-    backdrop-filter: blur(16px);
+    background: rgba(255, 255, 255, 0.92);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
     border-bottom: 1px solid var(--border-color);
-    padding: 1rem 2rem;
+    padding: 0.875rem 2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: sticky;
     top: 0;
     z-index: 100;
+    box-shadow: var(--shadow-xs);
 }
 
 .nav-brand {
@@ -120,60 +152,68 @@ body {
 }
 
 .logo-text {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     font-weight: 800;
-    letter-spacing: 4px;
-    background: linear-gradient(135deg, #FFF 0%, var(--primary) 100%);
+    letter-spacing: 5px;
+    background: linear-gradient(135deg, var(--primary) 0%, hsl(210, 85%, 52%) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
 .logo-subtext {
-    font-size: 0.65rem;
+    font-size: 0.6rem;
     font-weight: 600;
-    letter-spacing: 2px;
+    letter-spacing: 2.5px;
     color: var(--text-muted);
+    text-transform: uppercase;
+    margin-top: -2px;
 }
 
 .nav-controls {
     display: flex;
-    gap: 0.75rem;
+    gap: 0.5rem;
+    background: var(--bg-subtle);
+    padding: 0.3rem;
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--border-color);
 }
 
 .nav-btn {
     background: transparent;
-    border: 1px solid var(--border-color);
-    color: var(--text-muted);
-    padding: 0.6rem 1.2rem;
-    border-radius: 12px;
+    border: none;
+    color: var(--text-secondary);
+    padding: 0.5rem 1.1rem;
+    border-radius: var(--radius-md);
     font-family: inherit;
     font-weight: 500;
-    font-size: 0.9rem;
+    font-size: 0.875rem;
     cursor: pointer;
     display: flex;
     align-items: center;
-    gap: 0.5rem;
+    gap: 0.45rem;
     transition: var(--transition);
+    white-space: nowrap;
 }
 
 .nav-btn:hover {
-    background: rgba(255, 255, 255, 0.04);
+    background: var(--bg-surface);
     color: var(--text-main);
-    border-color: var(--border-hover);
+    box-shadow: var(--shadow-xs);
 }
 
 .nav-btn.active {
-    background: var(--primary-glow);
-    border-color: var(--primary);
-    color: var(--text-main);
-    box-shadow: 0 0 15px var(--primary-glow);
+    background: var(--bg-surface);
+    color: var(--primary);
+    font-weight: 600;
+    box-shadow: var(--shadow-sm);
 }
 
 /* ==========================================================================
    Layout & Container
    ========================================================================== */
 .container {
-    max-width: 1400px;
+    max-width: 1440px;
     margin: 2rem auto;
     padding: 0 1.5rem;
     min-height: 80vh;
@@ -181,7 +221,7 @@ body {
 
 .view-section {
     display: none;
-    animation: fadeIn 0.4s ease-out forwards;
+    animation: fadeIn 0.35s ease-out forwards;
 }
 
 .view-section.active {
@@ -189,7 +229,7 @@ body {
 }
 
 @keyframes fadeIn {
-    from { opacity: 0; transform: translateY(10px); }
+    from { opacity: 0; transform: translateY(8px); }
     to { opacity: 1; transform: translateY(0); }
 }
 
@@ -207,24 +247,24 @@ body {
 }
 
 /* ==========================================================================
-   Premium Glassmorphism Cards
+   Elegant Cards
    ========================================================================== */
 .glass-card {
     background: var(--card-bg);
-    backdrop-filter: blur(12px);
     border: 1px solid var(--border-color);
-    border-radius: 20px;
+    border-radius: var(--radius-xl);
     padding: 1.75rem;
-    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
-    transition: border-color 0.3s;
+    box-shadow: var(--shadow-sm);
+    transition: box-shadow 0.25s, border-color 0.25s;
 }
 
 .glass-card:hover {
     border-color: var(--border-hover);
+    box-shadow: var(--shadow-md);
 }
 
 .card-title {
-    font-size: 1.25rem;
+    font-size: 1.1rem;
     font-weight: 700;
     margin-bottom: 1.25rem;
     display: flex;
@@ -248,7 +288,7 @@ body {
     font-size: 0.9rem;
     color: var(--text-muted);
     margin-bottom: 1.25rem;
-    line-height: 1.5;
+    line-height: 1.6;
 }
 
 /* ==========================================================================
@@ -269,24 +309,52 @@ body {
 
 .metric-card {
     background: var(--card-bg);
-    backdrop-filter: blur(12px);
     border: 1px solid var(--border-color);
-    border-radius: 16px;
-    padding: 1.25rem;
+    border-radius: var(--radius-lg);
+    padding: 1.25rem 1.5rem;
+    box-shadow: var(--shadow-xs);
+    transition: var(--transition);
+    position: relative;
+    overflow: hidden;
+}
+
+.metric-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, var(--primary), hsl(210, 85%, 55%));
+    opacity: 0;
+    transition: opacity 0.25s;
+}
+
+.metric-card:hover::before {
+    opacity: 1;
+}
+
+.metric-card:hover {
+    box-shadow: var(--shadow-md);
+    border-color: var(--border-hover);
+    transform: translateY(-1px);
 }
 
 .metric-title {
-    font-size: 0.8rem;
+    font-size: 0.75rem;
     color: var(--text-muted);
     text-transform: uppercase;
-    letter-spacing: 1.5px;
+    letter-spacing: 1.2px;
     margin-bottom: 0.5rem;
+    font-weight: 600;
 }
 
 .metric-value {
-    font-size: 2rem;
+    font-size: 1.9rem;
     font-weight: 800;
     margin-bottom: 0.25rem;
+    letter-spacing: -0.5px;
+    color: var(--text-main);
 }
 
 .metric-footer {
@@ -296,7 +364,7 @@ body {
 
 .text-green { color: var(--success); }
 .text-purple { color: var(--primary); }
-.text-red { color: var(--warning); }
+.text-red { color: var(--danger); }
 .mt-4 { margin-top: 1.5rem; }
 
 /* ==========================================================================
@@ -317,33 +385,46 @@ body {
 
 label {
     display: block;
-    font-size: 0.85rem;
+    font-size: 0.82rem;
     font-weight: 600;
-    color: var(--text-muted);
-    margin-bottom: 0.5rem;
+    color: var(--text-secondary);
+    margin-bottom: 0.4rem;
+    letter-spacing: 0.2px;
 }
 
 .form-control {
     width: 100%;
-    background: rgba(10, 15, 30, 0.6);
+    background: var(--bg-page);
     border: 1px solid var(--border-color);
-    border-radius: 10px;
-    padding: 0.75rem;
+    border-radius: var(--radius-sm);
+    padding: 0.7rem 0.85rem;
     color: var(--text-main);
     font-family: inherit;
-    font-size: 0.95rem;
+    font-size: 0.9rem;
     transition: var(--transition);
+    appearance: none;
 }
 
 .form-control:focus {
     outline: none;
     border-color: var(--primary);
-    box-shadow: 0 0 10px var(--primary-glow);
-    background: rgba(10, 15, 30, 0.85);
+    background: var(--bg-surface);
+    box-shadow: var(--shadow-focus);
+}
+
+.form-control::placeholder {
+    color: var(--text-placeholder);
+}
+
+select.form-control {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%236B7280' d='M6 8L1 3h10z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 0.75rem center;
+    padding-right: 2.25rem;
 }
 
 select.form-control option {
-    background-color: var(--bg-dark);
+    background-color: var(--bg-surface);
     color: var(--text-main);
 }
 
@@ -355,10 +436,10 @@ select.form-control option {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 0.6rem;
-    background: rgba(10, 15, 30, 0.4);
+    background: var(--bg-subtle);
     border: 1px solid var(--border-color);
-    padding: 0.75rem;
-    border-radius: 10px;
+    padding: 0.85rem;
+    border-radius: var(--radius-sm);
 }
 
 .check-item {
@@ -366,14 +447,17 @@ select.form-control option {
     align-items: center;
     gap: 0.5rem;
     font-size: 0.85rem;
-    color: var(--text-main);
+    color: var(--text-secondary);
     cursor: pointer;
     margin-bottom: 0;
+    font-weight: 500;
 }
 
 .check-item input[type="checkbox"] {
     accent-color: var(--primary);
     cursor: pointer;
+    width: 15px;
+    height: 15px;
 }
 
 /* ==========================================================================
@@ -382,16 +466,17 @@ select.form-control option {
 .btn {
     font-family: inherit;
     font-weight: 600;
-    padding: 0.75rem 1.5rem;
-    border-radius: 10px;
+    padding: 0.7rem 1.4rem;
+    border-radius: var(--radius-sm);
     border: none;
     cursor: pointer;
     transition: var(--transition);
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    gap: 0.5rem;
-    font-size: 0.95rem;
+    gap: 0.45rem;
+    font-size: 0.9rem;
+    letter-spacing: 0.1px;
 }
 
 .btn-block {
@@ -400,34 +485,39 @@ select.form-control option {
 }
 
 .btn-primary {
-    background: rgba(255, 255, 255, 0.1);
+    background: var(--bg-subtle);
     border: 1px solid var(--border-color);
-    color: var(--text-main);
+    color: var(--text-secondary);
 }
 
 .btn-primary:hover {
-    background: rgba(255, 255, 255, 0.15);
+    background: var(--bg-inset);
     border-color: var(--border-hover);
+    color: var(--text-main);
 }
 
 .btn-purple {
     background: var(--primary);
     color: white;
+    box-shadow: 0 2px 8px rgba(88, 58, 220, 0.25);
 }
 
 .btn-purple:hover {
     background: var(--primary-hover);
-    box-shadow: 0 0 15px var(--primary-glow);
+    box-shadow: 0 4px 16px rgba(88, 58, 220, 0.35);
+    transform: translateY(-1px);
 }
 
 .btn-green {
     background: var(--success);
     color: white;
+    box-shadow: 0 2px 8px rgba(20, 150, 100, 0.2);
 }
 
 .btn-green:hover {
-    background: hsl(162, 80%, 38%);
-    box-shadow: 0 0 15px var(--success-glow);
+    background: hsl(162, 65%, 32%);
+    box-shadow: 0 4px 16px rgba(20, 150, 100, 0.3);
+    transform: translateY(-1px);
 }
 
 .btn-secondary {
@@ -439,17 +529,18 @@ select.form-control option {
 .btn-secondary:hover {
     color: var(--text-main);
     border-color: var(--border-hover);
+    background: var(--bg-subtle);
 }
 
 .btn-sparkle {
-    background: linear-gradient(135deg, var(--primary) 0%, #3B82F6 100%);
+    background: linear-gradient(135deg, var(--primary) 0%, hsl(210, 85%, 52%) 100%);
     color: white;
-    box-shadow: 0 4px 15px rgba(139, 92, 246, 0.35);
+    box-shadow: 0 3px 12px rgba(88, 58, 220, 0.30);
 }
 
 .btn-sparkle:hover {
     transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(139, 92, 246, 0.5);
+    box-shadow: 0 6px 20px rgba(88, 58, 220, 0.40);
 }
 
 /* ==========================================================================
@@ -463,7 +554,7 @@ select.form-control option {
 
 .detail-summary {
     cursor: pointer;
-    font-size: 0.9rem;
+    font-size: 0.875rem;
     font-weight: 600;
     color: var(--primary);
     user-select: none;
@@ -480,23 +571,24 @@ select.form-control option {
 .campaign-list {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
-    max-height: 400px;
+    gap: 0.85rem;
+    max-height: 420px;
     overflow-y: auto;
-    padding-right: 0.5rem;
+    padding-right: 0.4rem;
 }
 
 .campaign-item {
-    background: rgba(10, 15, 30, 0.4);
+    background: var(--bg-page);
     border: 1px solid var(--border-color);
-    border-radius: 12px;
-    padding: 1rem;
+    border-radius: var(--radius-md);
+    padding: 1rem 1.1rem;
     transition: var(--transition);
 }
 
 .campaign-item:hover {
     border-color: var(--border-hover);
-    background: rgba(10, 15, 30, 0.6);
+    background: var(--bg-surface);
+    box-shadow: var(--shadow-xs);
 }
 
 .campaign-item-header {
@@ -508,46 +600,48 @@ select.form-control option {
 
 .campaign-item-name {
     font-weight: 700;
-    font-size: 1rem;
+    font-size: 0.95rem;
+    color: var(--text-main);
 }
 
 .status-badge {
-    font-size: 0.7rem;
+    font-size: 0.68rem;
     font-weight: 700;
-    padding: 0.25rem 0.6rem;
+    padding: 0.2rem 0.6rem;
     border-radius: 20px;
     text-transform: uppercase;
+    letter-spacing: 0.5px;
 }
 
 .status-active {
-    background: rgba(16, 185, 129, 0.15);
+    background: var(--success-light);
     color: var(--success);
-    border: 1px solid var(--success);
+    border: 1px solid var(--success-border);
 }
 
 .status-pending {
-    background: rgba(245, 158, 11, 0.15);
-    color: #F59E0B;
-    border: 1px solid #F59E0B;
+    background: var(--warning-light);
+    color: var(--warning);
+    border: 1px solid hsl(38, 85%, 72%);
 }
 
 .status-rejected {
-    background: rgba(244, 63, 94, 0.15);
-    color: var(--warning);
-    border: 1px solid var(--warning);
+    background: var(--danger-light);
+    color: var(--danger);
+    border: 1px solid var(--danger-border);
 }
 
 .status-completed {
-    background: rgba(156, 163, 175, 0.15);
+    background: var(--bg-inset);
     color: var(--text-muted);
-    border: 1px solid var(--text-muted);
+    border: 1px solid var(--border-color);
 }
 
 .campaign-copy {
     font-size: 0.85rem;
-    color: var(--text-muted);
+    color: var(--text-secondary);
     margin-bottom: 0.75rem;
-    line-height: 1.4;
+    line-height: 1.5;
 }
 
 .campaign-item-footer {
@@ -555,17 +649,17 @@ select.form-control option {
     justify-content: space-between;
     font-size: 0.75rem;
     color: var(--text-muted);
-    border-top: 1px solid rgba(255,255,255,0.05);
+    border-top: 1px solid var(--border-color);
     padding-top: 0.5rem;
 }
 
 .feedback-alert {
-    background: rgba(244, 63, 94, 0.08);
-    border: 1px solid rgba(244, 63, 94, 0.2);
-    border-radius: 8px;
+    background: var(--danger-light);
+    border: 1px solid var(--danger-border);
+    border-radius: var(--radius-sm);
     padding: 0.5rem 0.75rem;
     font-size: 0.8rem;
-    color: #FDA4AF;
+    color: var(--danger);
     margin-top: 0.5rem;
 }
 
@@ -574,6 +668,8 @@ select.form-control option {
    ========================================================================== */
 .table-container {
     overflow-x: auto;
+    border-radius: var(--radius-md);
+    border: 1px solid var(--border-color);
 }
 
 .synq-table {
@@ -584,18 +680,25 @@ select.form-control option {
 }
 
 .synq-table th, .synq-table td {
-    padding: 0.75rem 1rem;
+    padding: 0.8rem 1rem;
     border-bottom: 1px solid var(--border-color);
 }
 
 .synq-table th {
     font-weight: 700;
     color: var(--text-muted);
-    background: rgba(255, 255, 255, 0.02);
+    background: var(--bg-subtle);
+    font-size: 0.78rem;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
 }
 
 .synq-table tbody tr:hover {
-    background: rgba(255, 255, 255, 0.01);
+    background: var(--bg-page);
+}
+
+.synq-table tbody tr:last-child td {
+    border-bottom: none;
 }
 
 .pill {
@@ -606,12 +709,12 @@ select.form-control option {
 }
 
 .pill-unsettled {
-    background: rgba(245, 158, 11, 0.15);
-    color: #F59E0B;
+    background: var(--warning-light);
+    color: var(--warning);
 }
 
 .pill-settled {
-    background: rgba(16, 185, 129, 0.15);
+    background: var(--success-light);
     color: var(--success);
 }
 
@@ -638,11 +741,11 @@ select.form-control option {
 
 .phone-frame {
     width: 360px;
-    height: 720px;
-    background: #000;
-    border: 12px solid #2d2d30;
-    border-radius: 44px;
-    box-shadow: 0 25px 60px -15px rgba(0, 0, 0, 0.8);
+    height: 730px;
+    background: #1C1C1E;
+    border: 10px solid #2C2C2E;
+    border-radius: 48px;
+    box-shadow: 0 30px 70px -10px rgba(20, 20, 60, 0.3), 0 0 0 1px rgba(255,255,255,0.08);
     position: relative;
     overflow: hidden;
 }
@@ -652,19 +755,19 @@ select.form-control option {
     top: 0;
     left: 50%;
     transform: translateX(-50%);
-    width: 150px;
-    height: 25px;
-    background: #2d2d30;
-    border-bottom-left-radius: 18px;
-    border-bottom-right-radius: 18px;
+    width: 140px;
+    height: 22px;
+    background: #2C2C2E;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
     z-index: 10;
 }
 
 .phone-screen {
     width: 100%;
     height: 100%;
-    background: #0B0F19;
-    padding: 2.5rem 1rem 1rem 1rem; /* Padding for notch */
+    background: #F5F5F7;
+    padding: 2.5rem 1rem 1rem 1rem;
     display: flex;
     flex-direction: column;
 }
@@ -675,37 +778,37 @@ select.form-control option {
 }
 
 .phone-app-name {
-    font-size: 1.1rem;
+    font-size: 1.05rem;
     font-weight: 800;
-    color: white;
+    color: #1C1C1E;
 }
 
 .phone-user-select-box {
-    margin-top: 0.25rem;
+    margin-top: 0.2rem;
 }
 
 .phone-user-select {
     background: transparent;
     border: none;
-    color: var(--text-muted);
+    color: #6E6E73;
     font-family: inherit;
-    font-size: 0.8rem;
+    font-size: 0.78rem;
     cursor: pointer;
     font-weight: 500;
     outline: none;
 }
 
 .phone-balance-widget {
-    background: linear-gradient(135deg, rgba(255,255,255,0.06) 0%, rgba(255,255,255,0.01) 100%);
-    border: 1px solid rgba(255,255,255,0.06);
+    background: #FFFFFF;
+    border: 1px solid rgba(0,0,0,0.06);
     border-radius: 18px;
     padding: 1rem;
     margin-bottom: 1rem;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.06);
 }
 
 .card-layout {
-    background: linear-gradient(135deg, #1E1B4B 0%, #311042 100%);
-    border: 1px solid rgba(255, 255, 255, 0.05);
+    background: linear-gradient(135deg, #3730A3 0%, #6D28D9 100%);
     border-radius: 12px;
     padding: 0.75rem 1rem;
     color: white;
@@ -713,14 +816,14 @@ select.form-control option {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    box-shadow: 0 6px 20px rgba(55, 48, 163, 0.35);
     margin-bottom: 0.75rem;
 }
 
 .card-chip {
     width: 20px;
     height: 16px;
-    background: linear-gradient(135deg, #D4AF37 0%, #AA7C11 100%);
+    background: linear-gradient(135deg, #F5D78E 0%, #C9A227 100%);
     border-radius: 3px;
 }
 
@@ -734,13 +837,14 @@ select.form-control option {
     font-size: 0.65rem;
     text-transform: uppercase;
     letter-spacing: 1px;
+    opacity: 0.85;
 }
 
 .card-type {
     align-self: flex-end;
     font-size: 0.6rem;
     font-weight: 800;
-    color: var(--primary-hover);
+    color: rgba(255,255,255,0.75);
     letter-spacing: 1.5px;
 }
 
@@ -751,19 +855,20 @@ select.form-control option {
 
 .bal-label {
     font-size: 0.65rem;
-    color: var(--text-muted);
+    color: #6E6E73;
 }
 
 .bal-value {
-    font-size: 1.15rem;
+    font-size: 1.1rem;
     font-weight: 800;
+    color: #1C1C1E;
 }
 
 .text-right { text-align: right; }
 
 .phone-tabs {
     display: flex;
-    background: rgba(255, 255, 255, 0.03);
+    background: rgba(0, 0, 0, 0.05);
     border-radius: 10px;
     padding: 0.2rem;
     gap: 0.2rem;
@@ -774,9 +879,9 @@ select.form-control option {
     flex: 1;
     background: transparent;
     border: none;
-    color: var(--text-muted);
+    color: #6E6E73;
     font-family: inherit;
-    font-size: 0.75rem;
+    font-size: 0.72rem;
     font-weight: 600;
     padding: 0.4rem;
     border-radius: 8px;
@@ -785,8 +890,9 @@ select.form-control option {
 }
 
 .tab-btn.active {
-    background: rgba(255, 255, 255, 0.08);
-    color: white;
+    background: #FFFFFF;
+    color: #1C1C1E;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.1);
 }
 
 .phone-content {
@@ -802,7 +908,7 @@ select.form-control option {
     width: 3px;
 }
 .phone-content::-webkit-scrollbar-thumb {
-    background: rgba(255,255,255,0.1);
+    background: rgba(0,0,0,0.1);
     border-radius: 2px;
 }
 
@@ -812,15 +918,16 @@ select.form-control option {
 
 /* Consumer Offer Card inside phone */
 .phone-offer-card {
-    background: rgba(255, 255, 255, 0.03);
-    border: 1px solid rgba(255,255,255,0.05);
+    background: #FFFFFF;
+    border: 1px solid rgba(0,0,0,0.06);
     border-radius: 14px;
     padding: 0.85rem;
     transition: var(--transition);
+    box-shadow: 0 1px 6px rgba(0,0,0,0.05);
 }
 
 .phone-offer-card:hover {
-    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 3px 12px rgba(0,0,0,0.08);
 }
 
 .offer-card-header {
@@ -833,27 +940,27 @@ select.form-control option {
 .offer-card-merchant {
     font-weight: 700;
     font-size: 0.9rem;
-    color: white;
+    color: #1C1C1E;
 }
 
 .offer-card-value {
-    color: var(--success);
+    color: hsl(162, 65%, 35%);
     font-weight: 800;
-    font-size: 0.95rem;
+    font-size: 0.9rem;
 }
 
 .offer-card-body {
     font-size: 0.75rem;
-    color: var(--text-muted);
+    color: #6E6E73;
     line-height: 1.4;
     margin-bottom: 0.6rem;
 }
 
 .offer-card-ai-explanation {
     font-size: 0.7rem;
-    color: var(--primary-hover);
-    background: rgba(139, 92, 246, 0.08);
-    border-left: 2px solid var(--primary);
+    color: hsl(245, 65%, 50%);
+    background: hsl(245, 80%, 97%);
+    border-left: 2px solid hsl(245, 70%, 75%);
     padding: 0.3rem 0.5rem;
     border-radius: 0 4px 4px 0;
     margin-bottom: 0.6rem;
@@ -868,13 +975,13 @@ select.form-control option {
 
 .offer-card-limits {
     font-size: 0.6rem;
-    color: var(--text-muted);
+    color: #8E8E93;
 }
 
 .btn-activate {
-    background: rgba(255, 255, 255, 0.08);
-    border: 1px solid rgba(255,255,255,0.06);
-    color: var(--text-main);
+    background: var(--bg-subtle);
+    border: 1px solid rgba(0,0,0,0.08);
+    color: #3C3C43;
     font-size: 0.65rem;
     font-weight: 700;
     padding: 0.3rem 0.6rem;
@@ -884,14 +991,13 @@ select.form-control option {
 }
 
 .btn-activate:hover {
-    background: rgba(255,255,255,0.12);
+    background: var(--bg-inset);
 }
 
 .btn-activate.active {
-    background: var(--success-glow);
-    border-color: var(--success);
+    background: var(--success-light);
+    border-color: var(--success-border);
     color: var(--success);
-    box-shadow: 0 0 10px var(--success-glow);
 }
 
 /* ==========================================
@@ -905,7 +1011,7 @@ select.form-control option {
 
 .map-info {
     font-size: 0.65rem;
-    color: var(--text-muted);
+    color: #6E6E73;
 }
 
 .map-filters {
@@ -914,9 +1020,9 @@ select.form-control option {
 }
 
 .filter-chip {
-    background: rgba(255, 255, 255, 0.03);
-    border: 1px solid rgba(255,255,255,0.05);
-    color: var(--text-muted);
+    background: rgba(0, 0, 0, 0.04);
+    border: 1px solid rgba(0,0,0,0.08);
+    color: #6E6E73;
     font-family: inherit;
     font-size: 0.6rem;
     font-weight: 600;
@@ -927,14 +1033,14 @@ select.form-control option {
 }
 
 .filter-chip.active {
-    background: var(--primary-glow);
-    border-color: var(--primary);
-    color: white;
+    background: var(--primary-light);
+    border-color: var(--primary-border);
+    color: var(--primary);
 }
 
 .map-canvas-container {
-    background: #050811;
-    border: 1px solid rgba(255, 255, 255, 0.05);
+    background: #E8EAF6;
+    border: 1px solid rgba(0, 0, 0, 0.07);
     border-radius: 12px;
     overflow: hidden;
     position: relative;
@@ -946,19 +1052,20 @@ select.form-control option {
 }
 
 .map-detail-card {
-    background: rgba(255, 255, 255, 0.02);
-    border: 1px solid rgba(255, 255, 255, 0.05);
+    background: #FFFFFF;
+    border: 1px solid rgba(0,0,0,0.07);
     border-radius: 12px;
     padding: 0.75rem;
     min-height: 80px;
     display: flex;
     align-items: center;
     justify-content: center;
+    box-shadow: var(--shadow-xs);
 }
 
 .detail-placeholder {
     font-size: 0.75rem;
-    color: var(--text-muted);
+    color: #8E8E93;
     text-align: center;
     font-style: italic;
 }
@@ -973,7 +1080,7 @@ select.form-control option {
 .map-detail-title {
     font-weight: 700;
     font-size: 0.85rem;
-    color: white;
+    color: #1C1C1E;
 }
 
 .map-detail-row {
@@ -992,33 +1099,33 @@ select.form-control option {
 }
 
 .terminal-box {
-    background: #050811;
-    border: 1px solid rgba(255, 255, 255, 0.05);
-    border-radius: 12px;
+    background: hsl(222, 25%, 11%);
+    border: 1px solid hsl(222, 20%, 18%);
+    border-radius: var(--radius-md);
     font-family: 'JetBrains Mono', monospace;
-    font-size: 0.8rem;
+    font-size: 0.78rem;
     padding: 1rem;
-    height: 180px;
+    height: 190px;
     overflow-y: auto;
-    color: #34D399; /* Green text console */
-    line-height: 1.5;
+    color: #4ADE80;
+    line-height: 1.6;
 }
 
 .terminal-line {
-    margin-bottom: 0.4rem;
+    margin-bottom: 0.35rem;
 }
 
-.terminal-line.text-muted { color: var(--text-muted); }
-.terminal-line.text-error { color: var(--warning); }
-.terminal-line.text-success { color: var(--success); }
+.terminal-line.text-muted { color: #6B7280; }
+.terminal-line.text-error { color: #F87171; }
+.terminal-line.text-success { color: #4ADE80; }
 
 /* ==========================================================================
    Bank Admin: Customer 360 viewer
    ========================================================================== */
 .customer-info-box {
-    background: rgba(10, 15, 30, 0.4);
+    background: var(--bg-page);
     border: 1px solid var(--border-color);
-    border-radius: 12px;
+    border-radius: var(--radius-md);
     padding: 1.25rem;
     margin-top: 1.25rem;
 }
@@ -1030,13 +1137,15 @@ select.form-control option {
 }
 
 .c360-name {
-    font-size: 1.2rem;
+    font-size: 1.15rem;
     font-weight: 700;
+    color: var(--text-main);
 }
 
 .c360-email {
     font-size: 0.8rem;
     color: var(--text-muted);
+    margin-top: 0.1rem;
 }
 
 .c360-section {
@@ -1044,7 +1153,7 @@ select.form-control option {
 }
 
 .section-subtitle {
-    font-size: 0.8rem;
+    font-size: 0.75rem;
     text-transform: uppercase;
     letter-spacing: 1px;
     color: var(--text-muted);
@@ -1069,12 +1178,13 @@ select.form-control option {
     justify-content: space-between;
     font-size: 0.8rem;
     font-weight: 500;
+    color: var(--text-secondary);
 }
 
 .affinity-bar-bg {
     width: 100%;
-    height: 6px;
-    background: rgba(255,255,255,0.05);
+    height: 5px;
+    background: var(--bg-inset);
     border-radius: 4px;
     overflow: hidden;
 }
@@ -1082,8 +1192,7 @@ select.form-control option {
 .affinity-bar-fill {
     height: 100%;
     border-radius: 4px;
-    background: linear-gradient(90deg, var(--primary) 0%, #3B82F6 100%);
-    box-shadow: 0 0 8px var(--primary-glow);
+    background: linear-gradient(90deg, var(--primary) 0%, hsl(210, 85%, 55%) 100%);
 }
 
 .affinity-explain {
@@ -1101,21 +1210,22 @@ select.form-control option {
 
 .pref-pill {
     font-size: 0.75rem;
-    padding: 0.3rem 0.6rem;
+    padding: 0.3rem 0.65rem;
     border-radius: 20px;
     border: 1px solid var(--border-color);
+    font-weight: 500;
 }
 
 .pref-pill.active {
-    background: var(--success-glow);
+    background: var(--success-light);
     color: var(--success);
-    border-color: var(--success);
+    border-color: var(--success-border);
 }
 
 .pref-pill.inactive {
-    background: var(--warning-glow);
-    color: var(--warning);
-    border-color: var(--warning);
+    background: var(--danger-light);
+    color: var(--danger);
+    border-color: var(--danger-border);
 }
 
 .history-list {
@@ -1134,23 +1244,29 @@ select.form-control option {
     width: 4px;
 }
 .scroll-box::-webkit-scrollbar-thumb {
-    background: rgba(255,255,255,0.05);
+    background: var(--border-color);
     border-radius: 2px;
 }
 
 .tx-history-item {
-    background: rgba(255,255,255,0.02);
+    background: var(--bg-surface);
     border: 1px solid var(--border-color);
-    border-radius: 8px;
+    border-radius: var(--radius-sm);
     padding: 0.5rem 0.75rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
     font-size: 0.75rem;
+    transition: var(--transition);
+}
+
+.tx-history-item:hover {
+    border-color: var(--border-hover);
 }
 
 .tx-merchant {
     font-weight: 600;
+    color: var(--text-main);
 }
 
 .tx-date {
@@ -1161,6 +1277,7 @@ select.form-control option {
 
 .tx-amt {
     font-weight: 700;
+    color: var(--text-main);
 }
 
 /* ==========================================================================
@@ -1170,16 +1287,22 @@ select.form-control option {
     display: flex;
     flex-direction: column;
     gap: 1.25rem;
-    max-height: 550px;
+    max-height: 570px;
     overflow-y: auto;
     padding-right: 0.5rem;
 }
 
 .compliance-item-card {
-    background: rgba(10, 15, 30, 0.4);
+    background: var(--bg-page);
     border: 1px solid var(--border-color);
-    border-radius: 16px;
+    border-radius: var(--radius-lg);
     padding: 1.25rem;
+    transition: var(--transition);
+}
+
+.compliance-item-card:hover {
+    box-shadow: var(--shadow-xs);
+    border-color: var(--border-hover);
 }
 
 .comp-meta-row {
@@ -1188,24 +1311,26 @@ select.form-control option {
     font-size: 0.75rem;
     color: var(--text-muted);
     margin-bottom: 0.75rem;
-    border-bottom: 1px solid rgba(255,255,255,0.05);
-    padding-bottom: 0.4rem;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 0.5rem;
 }
 
 .comp-name {
-    font-size: 1.1rem;
+    font-size: 1.05rem;
     font-weight: 700;
     margin-bottom: 0.5rem;
+    color: var(--text-main);
 }
 
 .comp-copy-box {
-    background: rgba(0,0,0,0.2);
-    border: 1px solid rgba(255,255,255,0.03);
+    background: var(--bg-subtle);
+    border: 1px solid var(--border-color);
     padding: 0.75rem;
-    border-radius: 8px;
-    font-size: 0.8rem;
+    border-radius: var(--radius-sm);
+    font-size: 0.85rem;
     margin-bottom: 0.75rem;
-    line-height: 1.4;
+    line-height: 1.5;
+    color: var(--text-secondary);
 }
 
 .comp-disclosure {
@@ -1216,34 +1341,34 @@ select.form-control option {
 }
 
 .comp-agent-feedback {
-    background: rgba(244, 63, 94, 0.05);
-    border-left: 3px solid var(--warning);
+    background: var(--danger-light);
+    border-left: 3px solid var(--danger);
     padding: 0.75rem;
-    border-radius: 0 8px 8px 0;
+    border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
     margin-bottom: 1rem;
 }
 
 .comp-feedback-title {
     font-size: 0.75rem;
     font-weight: 700;
-    color: #FDA4AF;
+    color: var(--danger);
     margin-bottom: 0.25rem;
 }
 
 .comp-feedback-text {
     font-size: 0.8rem;
-    color: #F87171;
+    color: hsl(3, 55%, 42%);
     line-height: 1.4;
 }
 
 .comp-suggested-edit {
     margin-top: 0.5rem;
     font-size: 0.8rem;
-    color: #D1FAE5;
-    background: rgba(16, 185, 129, 0.05);
+    color: hsl(162, 55%, 32%);
+    background: var(--success-light);
     padding: 0.5rem;
-    border-radius: 6px;
-    border: 1px dashed rgba(16, 185, 129, 0.2);
+    border-radius: var(--radius-sm);
+    border: 1px dashed var(--success-border);
 }
 
 .comp-actions {
@@ -1264,9 +1389,10 @@ select.form-control option {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 0.75rem;
-    background: rgba(0, 0, 0, 0.2);
-    padding: 0.75rem;
-    border-radius: 12px;
+    background: var(--bg-subtle);
+    padding: 0.85rem;
+    border-radius: var(--radius-md);
+    border: 1px solid var(--border-color);
 }
 
 @media(max-width: 768px) {
@@ -1279,24 +1405,33 @@ select.form-control option {
     display: flex;
     align-items: center;
     gap: 0.5rem;
-    background: rgba(255,255,255,0.02);
+    background: var(--bg-surface);
     border: 1px solid var(--border-color);
-    padding: 0.5rem;
-    border-radius: 8px;
+    padding: 0.6rem 0.75rem;
+    border-radius: var(--radius-sm);
+    box-shadow: var(--shadow-xs);
+    transition: var(--transition);
+}
+
+.agent-card-indicator:hover {
+    border-color: var(--border-hover);
+    box-shadow: var(--shadow-sm);
 }
 
 .agent-badge {
-    background: rgba(255,255,255,0.1);
-    font-size: 0.65rem;
+    background: var(--bg-subtle);
+    font-size: 0.62rem;
     font-weight: 700;
     padding: 0.2rem 0.4rem;
     border-radius: 4px;
+    color: var(--text-secondary);
+    border: 1px solid var(--border-color);
 }
 
 .agent-badge.active {
-    background: var(--primary-glow);
-    color: var(--primary-hover);
-    border: 1px solid var(--primary);
+    background: var(--primary-light);
+    color: var(--primary);
+    border: 1px solid var(--primary-border);
 }
 
 .agent-meta {
@@ -1307,26 +1442,28 @@ select.form-control option {
 .agent-name {
     font-size: 0.75rem;
     font-weight: 700;
+    color: var(--text-main);
 }
 
 .agent-out {
     font-size: 0.6rem;
     color: var(--text-muted);
+    margin-top: 1px;
 }
 
 .model-badge {
-    background: rgba(139, 92, 246, 0.15);
-    border: 1px solid var(--primary);
-    color: var(--primary-hover);
+    background: var(--primary-light);
+    border: 1px solid var(--primary-border);
+    color: var(--primary);
     font-size: 0.75rem;
     font-weight: 700;
     padding: 0.4rem 0.8rem;
-    border-radius: 10px;
-    letter-spacing: 0.5px;
+    border-radius: var(--radius-sm);
+    letter-spacing: 0.3px;
 }
 
 .log-stream-header {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -1339,7 +1476,7 @@ select.form-control option {
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    height: 480px;
+    height: 500px;
     overflow-y: auto;
     padding-right: 0.5rem;
 }
@@ -1348,31 +1485,37 @@ select.form-control option {
     width: 4px;
 }
 .log-stream::-webkit-scrollbar-thumb {
-    background: rgba(255,255,255,0.08);
+    background: var(--border-color);
     border-radius: 2px;
 }
 
 .log-item {
-    background: rgba(10, 15, 30, 0.4);
+    background: var(--bg-page);
     border: 1px solid var(--border-color);
-    border-radius: 12px;
+    border-radius: var(--radius-md);
     padding: 1rem;
     font-family: 'JetBrains Mono', monospace;
-    font-size: 0.8rem;
+    font-size: 0.78rem;
+    transition: var(--transition);
+}
+
+.log-item:hover {
+    border-color: var(--border-hover);
+    box-shadow: var(--shadow-xs);
 }
 
 .log-item-header {
     display: flex;
     justify-content: space-between;
     font-weight: 700;
-    font-size: 0.85rem;
+    font-size: 0.82rem;
     margin-bottom: 0.75rem;
-    border-bottom: 1px dashed rgba(255,255,255,0.05);
+    border-bottom: 1px dashed var(--border-color);
     padding-bottom: 0.4rem;
 }
 
 .log-item-agent {
-    color: var(--primary-hover);
+    color: var(--primary);
 }
 
 .log-item-time {
@@ -1393,24 +1536,25 @@ select.form-control option {
 }
 
 .payload-block {
-    background: rgba(0,0,0,0.2);
-    border: 1px solid rgba(255,255,255,0.02);
-    border-radius: 6px;
+    background: var(--bg-subtle);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-sm);
     padding: 0.6rem;
     overflow-x: auto;
-    font-size: 0.75rem;
+    font-size: 0.72rem;
 }
 
 .payload-label {
     color: var(--text-muted);
     font-weight: 700;
     margin-bottom: 0.25rem;
-    font-size: 0.7rem;
+    font-size: 0.68rem;
     text-transform: uppercase;
+    letter-spacing: 0.5px;
 }
 
 .payload-data {
-    color: #F3F4F6;
+    color: var(--text-secondary);
     white-space: pre-wrap;
     word-break: break-all;
 }
@@ -1424,15 +1568,16 @@ select.form-control option {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.7);
-    backdrop-filter: blur(8px);
+    background: rgba(15, 20, 50, 0.4);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     display: flex;
     align-items: center;
     justify-content: center;
     z-index: 1000;
     opacity: 0;
     pointer-events: none;
-    transition: opacity 0.3s;
+    transition: opacity 0.25s;
 }
 
 .modal-overlay.active {
@@ -1441,15 +1586,18 @@ select.form-control option {
 }
 
 .modal-card {
-    width: 450px;
+    width: 480px;
     position: relative;
     padding: 2rem !important;
+    box-shadow: var(--shadow-lg) !important;
+    border-color: var(--border-color) !important;
 }
 
 .modal-title {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     font-weight: 800;
     margin-bottom: 1rem;
+    color: var(--text-main);
 }
 
 .modal-actions {
@@ -1465,15 +1613,16 @@ select.form-control option {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(11, 15, 25, 0.9);
-    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: var(--radius-xl);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    font-size: 0.95rem;
+    font-size: 0.9rem;
     font-weight: 600;
     gap: 1rem;
+    color: var(--text-secondary);
 }
 
 .modal-loading.hidden {
@@ -1481,9 +1630,9 @@ select.form-control option {
 }
 
 .spinner {
-    width: 30px;
-    height: 30px;
-    border: 3px solid rgba(139, 92, 246, 0.1);
+    width: 28px;
+    height: 28px;
+    border: 3px solid var(--primary-light);
     border-top: 3px solid var(--primary);
     border-radius: 50%;
     animation: spin 0.8s linear infinite;
@@ -1512,27 +1661,29 @@ select.form-control option {
 }
 
 .auth-select {
-    background: rgba(10, 15, 30, 0.6);
+    background: var(--bg-page);
     border: 1px solid var(--border-color);
     color: var(--text-main);
     padding: 0.4rem 0.6rem;
-    border-radius: 8px;
+    border-radius: var(--radius-sm);
     font-size: 0.8rem;
     outline: none;
     font-family: inherit;
     transition: var(--transition);
+    appearance: none;
 }
 
 .auth-select:focus {
     border-color: var(--primary);
+    box-shadow: var(--shadow-focus);
 }
 
 .auth-input {
-    background: rgba(10, 15, 30, 0.6);
+    background: var(--bg-page);
     border: 1px solid var(--border-color);
     color: var(--text-main);
     padding: 0.4rem 0.6rem;
-    border-radius: 8px;
+    border-radius: var(--radius-sm);
     font-size: 0.8rem;
     width: 120px;
     outline: none;
@@ -1542,31 +1693,34 @@ select.form-control option {
 
 .auth-input:focus {
     border-color: var(--primary);
+    box-shadow: var(--shadow-focus);
 }
 
 .btn-auth-login {
     background: var(--success);
     color: white;
     border: none;
-    padding: 0.4rem 0.8rem;
-    border-radius: 8px;
+    padding: 0.4rem 0.85rem;
+    border-radius: var(--radius-sm);
     font-size: 0.8rem;
     font-weight: 600;
     cursor: pointer;
     transition: var(--transition);
+    box-shadow: 0 2px 6px rgba(20, 150, 100, 0.2);
 }
 
 .btn-auth-login:hover {
-    background: hsl(162, 80%, 38%);
-    box-shadow: 0 0 10px var(--success-glow);
+    background: hsl(162, 65%, 32%);
+    box-shadow: 0 3px 10px rgba(20, 150, 100, 0.28);
+    transform: translateY(-1px);
 }
 
 .btn-auth-logout {
-    background: rgba(244, 63, 94, 0.2);
-    border: 1px solid rgba(244, 63, 94, 0.4);
-    color: #FDA4AF;
-    padding: 0.4rem 0.8rem;
-    border-radius: 8px;
+    background: var(--danger-light);
+    border: 1px solid var(--danger-border);
+    color: var(--danger);
+    padding: 0.4rem 0.85rem;
+    border-radius: var(--radius-sm);
     font-size: 0.8rem;
     font-weight: 600;
     cursor: pointer;
@@ -1574,16 +1728,16 @@ select.form-control option {
 }
 
 .btn-auth-logout:hover {
-    background: rgba(244, 63, 94, 0.3);
+    background: hsl(3, 72%, 90%);
 }
 
 .user-name-label {
     font-size: 0.85rem;
     font-weight: 600;
-    color: var(--text-main);
-    background: rgba(255, 255, 255, 0.05);
+    color: var(--text-secondary);
+    background: var(--bg-subtle);
     padding: 0.4rem 0.75rem;
-    border-radius: 8px;
+    border-radius: var(--radius-sm);
     border: 1px solid var(--border-color);
 }
 
@@ -1591,3 +1745,19 @@ select.form-control option {
     display: none !important;
 }
 
+/* ==========================================================================
+   Scrollbars (Light)
+   ========================================================================== */
+.campaign-list::-webkit-scrollbar,
+.compliance-queue-list::-webkit-scrollbar {
+    width: 4px;
+}
+.campaign-list::-webkit-scrollbar-thumb,
+.compliance-queue-list::-webkit-scrollbar-thumb {
+    background: var(--border-color);
+    border-radius: 2px;
+}
+.campaign-list::-webkit-scrollbar-track,
+.compliance-queue-list::-webkit-scrollbar-track {
+    background: transparent;
+}
