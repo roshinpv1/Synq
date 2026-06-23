@@ -1,0 +1,47 @@
+services:
+  synq:
+    build: .
+    command: ["web", "--host", "0.0.0.0", "--no-browser"]
+    ports:
+      - "8000:8000"
+    env_file:
+      - .env
+    volumes:
+      - synq_data:/home/appuser/.synq
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8000/health')"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 15s
+    tty: true
+    stdin_open: true
+
+  ollama:
+    image: ollama/ollama:latest
+    volumes:
+      - ollama_data:/root/.ollama
+    profiles:
+      - ollama
+
+  synq-ollama:
+    build: .
+    command: ["web", "--host", "0.0.0.0", "--no-browser"]
+    ports:
+      - "8000:8000"
+    env_file:
+      - .env
+    environment:
+      - SYNQ_LLM_PROVIDER=ollama
+    volumes:
+      - synq_data:/home/appuser/.synq
+    depends_on:
+      - ollama
+    tty: true
+    stdin_open: true
+    profiles:
+      - ollama
+
+volumes:
+  synq_data:
+  ollama_data:

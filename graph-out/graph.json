@@ -1,0 +1,1733 @@
+{
+  "directed": false,
+  "multigraph": false,
+  "graph": {},
+  "nodes": [
+    {
+      "label": "CHANGELOG.md",
+      "file_type": "document",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L1",
+      "id": "changelog_md",
+      "community": 2,
+      "norm_label": "changelog.md"
+    },
+    {
+      "label": "Changelog",
+      "file_type": "document",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L1",
+      "id": "synq_changelog_changelog",
+      "community": 2,
+      "norm_label": "changelog"
+    },
+    {
+      "label": "[0.2.5] \u2014 2026-06-22",
+      "file_type": "document",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L7",
+      "id": "synq_changelog_0_2_5_2026_06_22",
+      "community": 3,
+      "norm_label": "[0.2.5] \u2014 2026-06-22"
+    },
+    {
+      "label": "Added",
+      "file_type": "document",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L9",
+      "id": "synq_changelog_added",
+      "community": 3,
+      "norm_label": "added"
+    },
+    {
+      "label": "Removed",
+      "file_type": "document",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L12",
+      "id": "synq_changelog_removed",
+      "community": 3,
+      "norm_label": "removed"
+    },
+    {
+      "label": "Fixed",
+      "file_type": "document",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L17",
+      "id": "synq_changelog_fixed",
+      "community": 3,
+      "norm_label": "fixed"
+    },
+    {
+      "label": "[0.2.0] \u2014 2026-05-15",
+      "file_type": "document",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L23",
+      "id": "synq_changelog_0_2_0_2026_05_15",
+      "community": 2,
+      "norm_label": "[0.2.0] \u2014 2026-05-15"
+    },
+    {
+      "label": "Added",
+      "file_type": "document",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L25",
+      "id": "synq_changelog_added_25",
+      "community": 2,
+      "norm_label": "added"
+    },
+    {
+      "label": "README.md",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L1",
+      "id": "readme_md",
+      "community": 0,
+      "norm_label": "readme.md"
+    },
+    {
+      "label": "Synq: Banking-Powered Commerce Intelligence Network",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L1",
+      "id": "synq_readme_synq_banking_powered_commerce_intelligence_network",
+      "community": 0,
+      "norm_label": "synq: banking-powered commerce intelligence network"
+    },
+    {
+      "label": "System Architecture",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L11",
+      "id": "synq_readme_system_architecture",
+      "community": 0,
+      "norm_label": "system architecture"
+    },
+    {
+      "label": "code:mermaid (graph TD)",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L19",
+      "id": "synq_readme_codeblock_1",
+      "community": 0,
+      "norm_label": "code:mermaid (graph td)"
+    },
+    {
+      "label": "Agentic Roles (The Synq Intelligence Layer)",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L32",
+      "id": "synq_readme_agentic_roles_the_synq_intelligence_layer",
+      "community": 0,
+      "norm_label": "agentic roles (the synq intelligence layer)"
+    },
+    {
+      "label": "Installation & CLI Setup",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L42",
+      "id": "synq_readme_installation_cli_setup",
+      "community": 0,
+      "norm_label": "installation & cli setup"
+    },
+    {
+      "label": "Prerequisites",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L44",
+      "id": "synq_readme_prerequisites",
+      "community": 0,
+      "norm_label": "prerequisites"
+    },
+    {
+      "label": "Installation",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L48",
+      "id": "synq_readme_installation",
+      "community": 0,
+      "norm_label": "installation"
+    },
+    {
+      "label": "code:bash (pip install -e .)",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L50",
+      "id": "synq_readme_codeblock_2",
+      "community": 0,
+      "norm_label": "code:bash (pip install -e .)"
+    },
+    {
+      "label": "Run the Web Server and Dashboard",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L54",
+      "id": "synq_readme_run_the_web_server_and_dashboard",
+      "community": 0,
+      "norm_label": "run the web server and dashboard"
+    },
+    {
+      "label": "code:bash (synq web)",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L56",
+      "id": "synq_readme_codeblock_3",
+      "community": 0,
+      "norm_label": "code:bash (synq web)"
+    },
+    {
+      "label": "Run Card Swipe Simulation from CLI",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L61",
+      "id": "synq_readme_run_card_swipe_simulation_from_cli",
+      "community": 0,
+      "norm_label": "run card swipe simulation from cli"
+    },
+    {
+      "label": "code:bash (synq simulate --customer-name \"Alice Vance\" --merchant \"Star)",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L63",
+      "id": "synq_readme_codeblock_4",
+      "community": 0,
+      "norm_label": "code:bash (synq simulate --customer-name \"alice vance\" --merchant \"star)"
+    },
+    {
+      "label": "Environment Configuration",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L69",
+      "id": "synq_readme_environment_configuration",
+      "community": 0,
+      "norm_label": "environment configuration"
+    },
+    {
+      "label": "code:bash (# LLM Provider Keys)",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L73",
+      "id": "synq_readme_codeblock_5",
+      "community": 0,
+      "norm_label": "code:bash (# llm provider keys)"
+    },
+    {
+      "label": "Testing",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L88",
+      "id": "synq_readme_testing",
+      "community": 5,
+      "norm_label": "testing"
+    },
+    {
+      "label": "code:bash (PYTHONPATH=. uv run pytest)",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L91",
+      "id": "synq_readme_codeblock_6",
+      "community": 5,
+      "norm_label": "code:bash (pythonpath=. uv run pytest)"
+    },
+    {
+      "label": "[0.2.5] \u2014 2026-05-11",
+      "file_type": "document",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L9",
+      "community": 3,
+      "norm_label": "[0.2.5] \u2014 2026-05-11",
+      "id": "synq_changelog_0_2_5_2026_05_11"
+    },
+    {
+      "label": "Changed",
+      "file_type": "document",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L49",
+      "community": 3,
+      "norm_label": "changed",
+      "id": "synq_changelog_changed"
+    },
+    {
+      "label": "Security",
+      "file_type": "document",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L78",
+      "community": 3,
+      "norm_label": "security",
+      "id": "synq_changelog_security"
+    },
+    {
+      "label": "[0.2.4] \u2014 2026-04-25",
+      "file_type": "document",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L84",
+      "community": 3,
+      "norm_label": "[0.2.4] \u2014 2026-04-25",
+      "id": "synq_changelog_0_2_4_2026_04_25"
+    },
+    {
+      "label": "Added",
+      "file_type": "document",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L86",
+      "community": 3,
+      "norm_label": "added",
+      "id": "synq_changelog_added_86"
+    },
+    {
+      "label": "Changed",
+      "file_type": "document",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L118",
+      "community": 3,
+      "norm_label": "changed",
+      "id": "synq_changelog_changed_118"
+    },
+    {
+      "label": "Fixed",
+      "file_type": "document",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L135",
+      "community": 3,
+      "norm_label": "fixed",
+      "id": "synq_changelog_fixed_135"
+    },
+    {
+      "label": "Contributors",
+      "file_type": "document",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L150",
+      "community": 3,
+      "norm_label": "contributors",
+      "id": "synq_changelog_contributors"
+    },
+    {
+      "label": "[0.2.3] \u2014 2026-03-29",
+      "file_type": "document",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L172",
+      "community": 7,
+      "norm_label": "[0.2.3] \u2014 2026-03-29",
+      "id": "synq_changelog_0_2_3_2026_03_29"
+    },
+    {
+      "label": "Added",
+      "file_type": "document",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L174",
+      "community": 7,
+      "norm_label": "added",
+      "id": "synq_changelog_added_174"
+    },
+    {
+      "label": "Changed",
+      "file_type": "document",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L182",
+      "community": 7,
+      "norm_label": "changed",
+      "id": "synq_changelog_changed_182"
+    },
+    {
+      "label": "Fixed",
+      "file_type": "document",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L188",
+      "community": 7,
+      "norm_label": "fixed",
+      "id": "synq_changelog_fixed_188"
+    },
+    {
+      "label": "Contributors",
+      "file_type": "document",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L197",
+      "community": 7,
+      "norm_label": "contributors",
+      "id": "synq_changelog_contributors_197"
+    },
+    {
+      "label": "[0.2.2] \u2014 2026-03-22",
+      "file_type": "document",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L207",
+      "community": 2,
+      "norm_label": "[0.2.2] \u2014 2026-03-22",
+      "id": "synq_changelog_0_2_2_2026_03_22"
+    },
+    {
+      "label": "Added",
+      "file_type": "document",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L209",
+      "community": 2,
+      "norm_label": "added",
+      "id": "synq_changelog_added_209"
+    },
+    {
+      "label": "Changed",
+      "file_type": "document",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L216",
+      "community": 2,
+      "norm_label": "changed",
+      "id": "synq_changelog_changed_216"
+    },
+    {
+      "label": "Fixed",
+      "file_type": "document",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L226",
+      "community": 2,
+      "norm_label": "fixed",
+      "id": "synq_changelog_fixed_226"
+    },
+    {
+      "label": "Contributors",
+      "file_type": "document",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L233",
+      "community": 2,
+      "norm_label": "contributors",
+      "id": "synq_changelog_contributors_233"
+    },
+    {
+      "label": "[0.2.1] \u2014 2026-03-15",
+      "file_type": "document",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L238",
+      "community": 4,
+      "norm_label": "[0.2.1] \u2014 2026-03-15",
+      "id": "synq_changelog_0_2_1_2026_03_15"
+    },
+    {
+      "label": "Security",
+      "file_type": "document",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L240",
+      "community": 4,
+      "norm_label": "security",
+      "id": "synq_changelog_security_240"
+    },
+    {
+      "label": "Added",
+      "file_type": "document",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L245",
+      "community": 4,
+      "norm_label": "added",
+      "id": "synq_changelog_added_245"
+    },
+    {
+      "label": "Removed",
+      "file_type": "document",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L250",
+      "community": 4,
+      "norm_label": "removed",
+      "id": "synq_changelog_removed_250"
+    },
+    {
+      "label": "Fixed",
+      "file_type": "document",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L254",
+      "community": 4,
+      "norm_label": "fixed",
+      "id": "synq_changelog_fixed_254"
+    },
+    {
+      "label": "Contributors",
+      "file_type": "document",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L264",
+      "community": 4,
+      "norm_label": "contributors",
+      "id": "synq_changelog_contributors_264"
+    },
+    {
+      "label": "[0.2.0] \u2014 2026-02-04",
+      "file_type": "document",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L270",
+      "community": 6,
+      "norm_label": "[0.2.0] \u2014 2026-02-04",
+      "id": "synq_changelog_0_2_0_2026_02_04"
+    },
+    {
+      "label": "Added",
+      "file_type": "document",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L276",
+      "community": 6,
+      "norm_label": "added",
+      "id": "synq_changelog_added_276"
+    },
+    {
+      "label": "Changed",
+      "file_type": "document",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L291",
+      "community": 6,
+      "norm_label": "changed",
+      "id": "synq_changelog_changed_291"
+    },
+    {
+      "label": "Fixed",
+      "file_type": "document",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L299",
+      "community": 6,
+      "norm_label": "fixed",
+      "id": "synq_changelog_fixed_299"
+    },
+    {
+      "label": "Contributors",
+      "file_type": "document",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L305",
+      "community": 6,
+      "norm_label": "contributors",
+      "id": "synq_changelog_contributors_305"
+    },
+    {
+      "label": "[0.1.1] \u2014 2025-06-07",
+      "file_type": "document",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L318",
+      "community": 2,
+      "norm_label": "[0.1.1] \u2014 2025-06-07",
+      "id": "synq_changelog_0_1_1_2025_06_07"
+    },
+    {
+      "label": "Removed",
+      "file_type": "document",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L320",
+      "community": 2,
+      "norm_label": "removed",
+      "id": "synq_changelog_removed_320"
+    },
+    {
+      "label": "[0.1.0] \u2014 2025-06-05",
+      "file_type": "document",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L325",
+      "community": 2,
+      "norm_label": "[0.1.0] \u2014 2025-06-05",
+      "id": "synq_changelog_0_1_0_2025_06_05"
+    },
+    {
+      "label": "Added",
+      "file_type": "document",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L327",
+      "community": 2,
+      "norm_label": "added",
+      "id": "synq_changelog_added_327"
+    },
+    {
+      "label": "TradingAgents: Multi-Agents LLM Financial Trading Framework",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L28",
+      "community": 1,
+      "norm_label": "tradingagents: multi-agents llm financial trading framework",
+      "id": "synq_readme_tradingagents_multi_agents_llm_financial_trading_framework"
+    },
+    {
+      "label": "News",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L30",
+      "community": 1,
+      "norm_label": "news",
+      "id": "synq_readme_news"
+    },
+    {
+      "label": "TradingAgents Framework",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L58",
+      "community": 1,
+      "norm_label": "tradingagents framework",
+      "id": "synq_readme_tradingagents_framework"
+    },
+    {
+      "label": "Analyst Team",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L70",
+      "community": 1,
+      "norm_label": "analyst team",
+      "id": "synq_readme_analyst_team"
+    },
+    {
+      "label": "Researcher Team",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L80",
+      "community": 1,
+      "norm_label": "researcher team",
+      "id": "synq_readme_researcher_team"
+    },
+    {
+      "label": "Trader Agent",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L87",
+      "community": 1,
+      "norm_label": "trader agent",
+      "id": "synq_readme_trader_agent"
+    },
+    {
+      "label": "Risk Management and Portfolio Manager",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L94",
+      "community": 1,
+      "norm_label": "risk management and portfolio manager",
+      "id": "synq_readme_risk_management_and_portfolio_manager"
+    },
+    {
+      "label": "Installation and CLI",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L102",
+      "community": 5,
+      "norm_label": "installation and cli",
+      "id": "synq_readme_installation_and_cli"
+    },
+    {
+      "label": "Docker",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L123",
+      "community": 0,
+      "norm_label": "docker",
+      "id": "synq_readme_docker"
+    },
+    {
+      "label": "Required APIs",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L136",
+      "community": 5,
+      "norm_label": "required apis",
+      "id": "synq_readme_required_apis"
+    },
+    {
+      "label": "code:bash (cp .env.example .env)",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L165",
+      "community": 5,
+      "norm_label": "code:bash (cp .env.example .env)",
+      "id": "synq_readme_codeblock_7"
+    },
+    {
+      "label": "CLI Usage",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L169",
+      "community": 5,
+      "norm_label": "cli usage",
+      "id": "synq_readme_cli_usage"
+    },
+    {
+      "label": "code:bash (tradingagents          # installed command)",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L172",
+      "community": 5,
+      "norm_label": "code:bash (tradingagents          # installed command)",
+      "id": "synq_readme_codeblock_8"
+    },
+    {
+      "label": "Markets and tickers",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L178",
+      "community": 5,
+      "norm_label": "markets and tickers",
+      "id": "synq_readme_markets_and_tickers"
+    },
+    {
+      "label": "TradingAgents Package",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L202",
+      "community": 9,
+      "norm_label": "tradingagents package",
+      "id": "synq_readme_tradingagents_package"
+    },
+    {
+      "label": "Implementation Details",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L204",
+      "community": 9,
+      "norm_label": "implementation details",
+      "id": "synq_readme_implementation_details"
+    },
+    {
+      "label": "Python Usage",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L208",
+      "community": 9,
+      "norm_label": "python usage",
+      "id": "synq_readme_python_usage"
+    },
+    {
+      "label": "code:python (from tradingagents.graph.trading_graph import TradingAgentsG)",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L212",
+      "community": 9,
+      "norm_label": "code:python (from tradingagents.graph.trading_graph import tradingagentsg)",
+      "id": "synq_readme_codeblock_9"
+    },
+    {
+      "label": "code:python (from tradingagents.graph.trading_graph import TradingAgentsG)",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L225",
+      "community": 9,
+      "norm_label": "code:python (from tradingagents.graph.trading_graph import tradingagentsg)",
+      "id": "synq_readme_codeblock_10"
+    },
+    {
+      "label": "Persistence and Recovery",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L242",
+      "community": 8,
+      "norm_label": "persistence and recovery",
+      "id": "synq_readme_persistence_and_recovery"
+    },
+    {
+      "label": "Decision log",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L246",
+      "community": 8,
+      "norm_label": "decision log",
+      "id": "synq_readme_decision_log"
+    },
+    {
+      "label": "Checkpoint resume",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L252",
+      "community": 8,
+      "norm_label": "checkpoint resume",
+      "id": "synq_readme_checkpoint_resume"
+    },
+    {
+      "label": "code:bash (tradingagents analyze --checkpoint           # enable for th)",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L258",
+      "community": 8,
+      "norm_label": "code:bash (tradingagents analyze --checkpoint           # enable for th)",
+      "id": "synq_readme_codeblock_11"
+    },
+    {
+      "label": "code:python (config = DEFAULT_CONFIG.copy())",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L263",
+      "community": 8,
+      "norm_label": "code:python (config = default_config.copy())",
+      "id": "synq_readme_codeblock_12"
+    },
+    {
+      "label": "Reproducibility",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L270",
+      "community": 1,
+      "norm_label": "reproducibility",
+      "id": "synq_readme_reproducibility"
+    },
+    {
+      "label": "code:python (config = DEFAULT_CONFIG.copy())",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L280",
+      "community": 1,
+      "norm_label": "code:python (config = default_config.copy())",
+      "id": "synq_readme_codeblock_13"
+    },
+    {
+      "label": "Contributing",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L292",
+      "community": 1,
+      "norm_label": "contributing",
+      "id": "synq_readme_contributing"
+    },
+    {
+      "label": "Citation",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L296",
+      "community": 1,
+      "norm_label": "citation",
+      "id": "synq_readme_citation"
+    },
+    {
+      "label": "code:block14 (@misc{xiao2025tradingagentsmultiagentsllmfinancial,)",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L300",
+      "community": 1,
+      "norm_label": "code:block14 (@misc{xiao2025tradingagentsmultiagentsllmfinancial,)",
+      "id": "synq_readme_codeblock_14"
+    }
+  ],
+  "links": [
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "changelog_md",
+      "target": "synq_changelog_changelog"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "synq_changelog_changelog",
+      "target": "synq_changelog_0_2_5_2026_06_22",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L23",
+      "weight": 1.0,
+      "source": "synq_changelog_changelog",
+      "target": "synq_changelog_0_2_0_2026_05_15",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L9",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "synq_changelog_changelog",
+      "target": "synq_changelog_0_2_5_2026_05_11"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L84",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "synq_changelog_changelog",
+      "target": "synq_changelog_0_2_4_2026_04_25"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L172",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "synq_changelog_changelog",
+      "target": "synq_changelog_0_2_3_2026_03_29"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L207",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "synq_changelog_changelog",
+      "target": "synq_changelog_0_2_2_2026_03_22"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L238",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "synq_changelog_changelog",
+      "target": "synq_changelog_0_2_1_2026_03_15"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L270",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "synq_changelog_changelog",
+      "target": "synq_changelog_0_2_0_2026_02_04"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L318",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "synq_changelog_changelog",
+      "target": "synq_changelog_0_1_1_2025_06_07"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L325",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "synq_changelog_changelog",
+      "target": "synq_changelog_0_1_0_2025_06_05"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "synq_changelog_0_2_5_2026_06_22",
+      "target": "synq_changelog_added",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "synq_changelog_0_2_5_2026_06_22",
+      "target": "synq_changelog_removed",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L17",
+      "weight": 1.0,
+      "source": "synq_changelog_0_2_5_2026_06_22",
+      "target": "synq_changelog_fixed",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L11",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "synq_changelog_0_2_5_2026_05_11",
+      "target": "synq_changelog_added"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L143",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "synq_changelog_0_2_4_2026_04_25",
+      "target": "synq_changelog_removed"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L56",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "synq_changelog_0_2_5_2026_05_11",
+      "target": "synq_changelog_fixed"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L25",
+      "weight": 1.0,
+      "source": "synq_changelog_0_2_0_2026_05_15",
+      "target": "synq_changelog_added_25",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "readme_md",
+      "target": "synq_readme_synq_banking_powered_commerce_intelligence_network",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L28",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "readme_md",
+      "target": "synq_readme_tradingagents_multi_agents_llm_financial_trading_framework"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "synq_readme_synq_banking_powered_commerce_intelligence_network",
+      "target": "synq_readme_system_architecture",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L32",
+      "weight": 1.0,
+      "source": "synq_readme_synq_banking_powered_commerce_intelligence_network",
+      "target": "synq_readme_agentic_roles_the_synq_intelligence_layer",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L42",
+      "weight": 1.0,
+      "source": "synq_readme_synq_banking_powered_commerce_intelligence_network",
+      "target": "synq_readme_installation_cli_setup",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L69",
+      "weight": 1.0,
+      "source": "synq_readme_synq_banking_powered_commerce_intelligence_network",
+      "target": "synq_readme_environment_configuration",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L88",
+      "weight": 1.0,
+      "source": "synq_readme_synq_banking_powered_commerce_intelligence_network",
+      "target": "synq_readme_testing",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L19",
+      "weight": 1.0,
+      "source": "synq_readme_system_architecture",
+      "target": "synq_readme_codeblock_1",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L107",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "synq_readme_installation",
+      "target": "synq_readme_codeblock_1"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L44",
+      "weight": 1.0,
+      "source": "synq_readme_installation_cli_setup",
+      "target": "synq_readme_prerequisites",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L48",
+      "weight": 1.0,
+      "source": "synq_readme_installation_cli_setup",
+      "target": "synq_readme_installation",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L54",
+      "weight": 1.0,
+      "source": "synq_readme_installation_cli_setup",
+      "target": "synq_readme_run_the_web_server_and_dashboard",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L61",
+      "weight": 1.0,
+      "source": "synq_readme_installation_cli_setup",
+      "target": "synq_readme_run_card_swipe_simulation_from_cli",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L113",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "synq_readme_installation",
+      "target": "synq_readme_codeblock_2"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L104",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "synq_readme_installation_and_cli",
+      "target": "synq_readme_installation"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L119",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "synq_readme_installation",
+      "target": "synq_readme_codeblock_3"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L56",
+      "weight": 1.0,
+      "source": "synq_readme_run_the_web_server_and_dashboard",
+      "target": "synq_readme_codeblock_3",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L63",
+      "weight": 1.0,
+      "source": "synq_readme_run_card_swipe_simulation_from_cli",
+      "target": "synq_readme_codeblock_4",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L126",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "synq_readme_docker",
+      "target": "synq_readme_codeblock_4"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L73",
+      "weight": 1.0,
+      "source": "synq_readme_environment_configuration",
+      "target": "synq_readme_codeblock_5",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L132",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "synq_readme_docker",
+      "target": "synq_readme_codeblock_5"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L91",
+      "weight": 1.0,
+      "source": "synq_readme_testing",
+      "target": "synq_readme_codeblock_6",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L140",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "synq_readme_required_apis",
+      "target": "synq_readme_codeblock_6"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L49",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "synq_changelog_0_2_5_2026_05_11",
+      "target": "synq_changelog_changed"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L78",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "synq_changelog_0_2_5_2026_05_11",
+      "target": "synq_changelog_security"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L86",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "synq_changelog_0_2_4_2026_04_25",
+      "target": "synq_changelog_added_86"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L118",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "synq_changelog_0_2_4_2026_04_25",
+      "target": "synq_changelog_changed_118"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L135",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "synq_changelog_0_2_4_2026_04_25",
+      "target": "synq_changelog_fixed_135"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L150",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "synq_changelog_0_2_4_2026_04_25",
+      "target": "synq_changelog_contributors"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L174",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "synq_changelog_0_2_3_2026_03_29",
+      "target": "synq_changelog_added_174"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L182",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "synq_changelog_0_2_3_2026_03_29",
+      "target": "synq_changelog_changed_182"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L188",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "synq_changelog_0_2_3_2026_03_29",
+      "target": "synq_changelog_fixed_188"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L197",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "synq_changelog_0_2_3_2026_03_29",
+      "target": "synq_changelog_contributors_197"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L209",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "synq_changelog_0_2_2_2026_03_22",
+      "target": "synq_changelog_added_209"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L216",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "synq_changelog_0_2_2_2026_03_22",
+      "target": "synq_changelog_changed_216"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L226",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "synq_changelog_0_2_2_2026_03_22",
+      "target": "synq_changelog_fixed_226"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L233",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "synq_changelog_0_2_2_2026_03_22",
+      "target": "synq_changelog_contributors_233"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L240",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "synq_changelog_0_2_1_2026_03_15",
+      "target": "synq_changelog_security_240"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L245",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "synq_changelog_0_2_1_2026_03_15",
+      "target": "synq_changelog_added_245"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L250",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "synq_changelog_0_2_1_2026_03_15",
+      "target": "synq_changelog_removed_250"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L254",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "synq_changelog_0_2_1_2026_03_15",
+      "target": "synq_changelog_fixed_254"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L264",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "synq_changelog_0_2_1_2026_03_15",
+      "target": "synq_changelog_contributors_264"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L276",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "synq_changelog_0_2_0_2026_02_04",
+      "target": "synq_changelog_added_276"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L291",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "synq_changelog_0_2_0_2026_02_04",
+      "target": "synq_changelog_changed_291"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L299",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "synq_changelog_0_2_0_2026_02_04",
+      "target": "synq_changelog_fixed_299"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L305",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "synq_changelog_0_2_0_2026_02_04",
+      "target": "synq_changelog_contributors_305"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L320",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "synq_changelog_0_1_1_2025_06_07",
+      "target": "synq_changelog_removed_320"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L327",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "synq_changelog_0_1_0_2025_06_05",
+      "target": "synq_changelog_added_327"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L30",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "synq_readme_tradingagents_multi_agents_llm_financial_trading_framework",
+      "target": "synq_readme_news"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L58",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "synq_readme_tradingagents_multi_agents_llm_financial_trading_framework",
+      "target": "synq_readme_tradingagents_framework"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L102",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "synq_readme_tradingagents_multi_agents_llm_financial_trading_framework",
+      "target": "synq_readme_installation_and_cli"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L202",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "synq_readme_tradingagents_multi_agents_llm_financial_trading_framework",
+      "target": "synq_readme_tradingagents_package"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L242",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "synq_readme_tradingagents_multi_agents_llm_financial_trading_framework",
+      "target": "synq_readme_persistence_and_recovery"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L270",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "synq_readme_tradingagents_multi_agents_llm_financial_trading_framework",
+      "target": "synq_readme_reproducibility"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L292",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "synq_readme_tradingagents_multi_agents_llm_financial_trading_framework",
+      "target": "synq_readme_contributing"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L296",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "synq_readme_tradingagents_multi_agents_llm_financial_trading_framework",
+      "target": "synq_readme_citation"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L70",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "synq_readme_tradingagents_framework",
+      "target": "synq_readme_analyst_team"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L80",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "synq_readme_tradingagents_framework",
+      "target": "synq_readme_researcher_team"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L87",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "synq_readme_tradingagents_framework",
+      "target": "synq_readme_trader_agent"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L94",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "synq_readme_tradingagents_framework",
+      "target": "synq_readme_risk_management_and_portfolio_manager"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L123",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "synq_readme_installation_and_cli",
+      "target": "synq_readme_docker"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L136",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "synq_readme_installation_and_cli",
+      "target": "synq_readme_required_apis"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L169",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "synq_readme_installation_and_cli",
+      "target": "synq_readme_cli_usage"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L178",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "synq_readme_installation_and_cli",
+      "target": "synq_readme_markets_and_tickers"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L165",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "synq_readme_required_apis",
+      "target": "synq_readme_codeblock_7"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L172",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "synq_readme_cli_usage",
+      "target": "synq_readme_codeblock_8"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L204",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "synq_readme_tradingagents_package",
+      "target": "synq_readme_implementation_details"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L208",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "synq_readme_tradingagents_package",
+      "target": "synq_readme_python_usage"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L212",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "synq_readme_python_usage",
+      "target": "synq_readme_codeblock_9"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L225",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "synq_readme_python_usage",
+      "target": "synq_readme_codeblock_10"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L246",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "synq_readme_persistence_and_recovery",
+      "target": "synq_readme_decision_log"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L252",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "synq_readme_persistence_and_recovery",
+      "target": "synq_readme_checkpoint_resume"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L258",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "synq_readme_checkpoint_resume",
+      "target": "synq_readme_codeblock_11"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L263",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "synq_readme_checkpoint_resume",
+      "target": "synq_readme_codeblock_12"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L280",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "synq_readme_reproducibility",
+      "target": "synq_readme_codeblock_13"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L300",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "synq_readme_citation",
+      "target": "synq_readme_codeblock_14"
+    }
+  ],
+  "hyperedges": []
+}

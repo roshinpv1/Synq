@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Synq | Banking-Powered Commerce Intelligence Network</title>
+    <!-- Modern Premium Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css?v=2">
+
+</head>
+<body>
+    <!-- Premium Glowing Background Effects -->
+    <div class="glow-bg">
+        <div class="glow-orb orb-1"></div>
+        <div class="glow-orb orb-2"></div>
+        <div class="glow-orb orb-3"></div>
+    </div>
+
+    <!-- Main Navigation Bar -->
+    <header class="navbar">
+        <div class="nav-brand">
+            <span class="logo-text">S Y N Q</span>
+            <span class="logo-subtext">COMMERCE NETWORK</span>
+        </div>
+        <div class="nav-controls">
+            <!-- Persona Switcher -->
+            <button class="nav-btn active" id="btn-merchant" onclick="switchView('merchant')">
+                <span class="icon">💼</span> Merchant Portal
+            </button>
+            <button class="nav-btn" id="btn-consumer" onclick="switchView('consumer')">
+                <span class="icon">📱</span> Consumer App
+            </button>
+            <button class="nav-btn" id="btn-admin" onclick="switchView('admin')">
+                <span class="icon">🛡️</span> Bank Admin
+            </button>
+            <button class="nav-btn" id="btn-console" onclick="switchView('console')">
+                <span class="icon">🤖</span> AI Inspector
+            </button>
+        </div>
+        <div class="nav-auth-container" id="nav-auth-section">
+            <div id="auth-logged-out" class="auth-box">
+                <select id="login-persona" class="auth-select" onchange="handlePersonaChange()">
+                    <option value="admin">Admin (admin123)</option>
+                    <option value="merchant_m1">Starbucks (merchant123)</option>
+                    <option value="consumer_c1">Alice (consumer123)</option>
+                </select>
+                <input type="password" id="login-pwd" placeholder="Password" class="auth-input" value="admin123">
+                <button onclick="handleLoginSubmit()" class="btn-auth-login">Log In</button>
+            </div>
+            <div id="auth-logged-in" class="auth-box hidden">
+                <span id="user-display-name" class="user-name-label">-</span>
+                <button onclick="handleLogout()" class="btn-auth-logout">Log Out</button>
+            </div>
+        </div>
+    </header>
+
+
+    <main class="container">
+        
+        <!-- ========================================== -->
+        <!-- VIEW 1: MERCHANT PORTAL                    -->
+        <!-- ========================================== -->
+        <section id="view-merchant" class="view-section active">
+            <!-- Dashboard Metrics -->
+            <div class="metrics-grid">
+                <div class="metric-card">
+                    <div class="metric-title">Active Campaigns</div>
+                    <div class="metric-value" id="merchant-active-campaigns">-</div>
+                    <div class="metric-footer text-green">↑ 100% Onboarding rate</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-title">Driven Spend</div>
+                    <div class="metric-value text-green" id="merchant-driven-spend">$0.00</div>
+                    <div class="metric-footer" id="merchant-spend-label">From active rewards</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-title">Cashback Paid</div>
+                    <div class="metric-value" id="merchant-cashback-paid">$0.00</div>
+                    <div class="metric-footer">Merchant budget expense</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-title">Average Campaign ROI</div>
+                    <div class="metric-value text-purple" id="merchant-roi">0.0x</div>
+                    <div class="metric-footer">Spend-driven ratio</div>
+                </div>
+            </div>
+
+            <div class="content-split">
+                <!-- Left: Campaign Creation & Onboarding -->
+                <div class="split-col col-left">
+                    <!-- Merchant Selection/Onboarding -->
+                    <div class="glass-card">
+                        <h2 class="card-title"><span class="icon">🏪</span> Selected Business</h2>
+                        <div class="form-group">
+                            <label for="merchant-select">Active Merchant Context</label>
+                            <select id="merchant-select" onchange="loadMerchantData()" class="form-control">
+                                <!-- Populated dynamically -->
+                            </select>
+                        </div>
+                        <div class="merchant-onboarding-box">
+                            <details>
+                                <summary class="detail-summary">Onboard New Business Store</summary>
+                                <form id="onboard-form" onsubmit="handleOnboard(event)">
+                                    <div class="form-group">
+                                        <label for="onboard-name">Business Name</label>
+                                        <input type="text" id="onboard-name" class="form-control" placeholder="e.g. Brew & Bakery" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="onboard-category">Category</label>
+                                        <select id="onboard-category" class="form-control">
+                                            <option value="Coffee">Coffee</option>
+                                            <option value="Dining">Dining</option>
+                                            <option value="Retail">Retail</option>
+                                            <option value="Fitness">Fitness</option>
+                                            <option value="Travel">Travel</option>
+                                            <option value="Grocery">Grocery</option>
+                                            <option value="Entertainment">Entertainment</option>
+                                            <option value="Electronics">Electronics</option>
+                                            <option value="Apparel">Apparel</option>
+                                            <option value="Gas & Automotive">Gas & Automotive</option>
+                                            <option value="Beauty & Wellness">Beauty & Wellness</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="onboard-address">Address</label>
+                                        <input type="text" id="onboard-address" class="form-control" placeholder="e.g. 555 Pine St" required>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary btn-block">Confirm Verification & Onboard</button>
+                                </form>
+                            </details>
+                        </div>
+                    </div>
+
+                    <!-- Campaign Builder Form -->
+                    <div class="glass-card mt-4">
+                        <div class="card-header-split">
+                            <h2 class="card-title"><span class="icon">➕</span> Campaign Builder</h2>
+                            <button class="btn btn-sparkle" onclick="triggerAISuggestion()">
+                                <span class="sparkle-icon">✨</span> Generate with AI Agent
+                            </button>
+                        </div>
+                        
+                        <form id="campaign-form" onsubmit="handleCreateCampaign(event)">
+                            <div class="form-group">
+                                <label for="camp-name">Campaign Name</label>
+                                <input type="text" id="camp-name" class="form-control" placeholder="e.g. Starbucks Morning Boost" required>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col">
+                                    <label for="camp-type">Reward Offer Type</label>
+                                    <select id="camp-type" class="form-control">
+                                        <option value="Cashback Percentage">Cashback Percentage</option>
+                                        <option value="Cashback Flat Amount">Cashback Flat Amount</option>
+                                    </select>
+                                </div>
+                                <div class="form-group col">
+                                    <label for="camp-value">Offer Value (% or $)</label>
+                                    <input type="number" step="0.1" id="camp-value" class="form-control" placeholder="e.g. 10" required>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col">
+                                    <label for="camp-min-spend">Min Spend Threshold ($)</label>
+                                    <input type="number" step="1" id="camp-min-spend" class="form-control" value="5">
+                                </div>
+                                <div class="form-group col">
+                                    <label for="camp-budget">Total Campaign Budget ($)</label>
+                                    <input type="number" step="1" id="camp-budget" class="form-control" placeholder="e.g. 1000" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="camp-duration">Duration (Days)</label>
+                                <input type="number" id="camp-duration" class="form-control" value="30" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Target Audience Segments</label>
+                                <div class="checkbox-grid">
+                                    <label class="check-item"><input type="checkbox" name="segments" value="Coffee Buyers" checked> Coffee Buyers</label>
+                                    <label class="check-item"><input type="checkbox" name="segments" value="Frequent Diners"> Frequent Diners</label>
+                                    <label class="check-item"><input type="checkbox" name="segments" value="High Spenders"> High Spenders</label>
+                                    <label class="check-item"><input type="checkbox" name="segments" value="Local Radius" checked> Local Radius</label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="camp-copy">Marketing Copy (Feed Text)</label>
+                                <textarea id="camp-copy" class="form-control text-area" rows="2" placeholder="Describe the offer nicely..." required></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label for="camp-disclosure">Legal Disclosures</label>
+                                <input type="text" id="camp-disclosure" class="form-control" placeholder="e.g. Valid on debit cards. Max reward $5." required>
+                            </div>
+                            <button type="submit" class="btn btn-purple btn-block">Submit Campaign for Compliance</button>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Right: Active Campaigns & Settlement Invoices -->
+                <div class="split-col col-right">
+                    <!-- Campaign Inventory -->
+                    <div class="glass-card">
+                        <h2 class="card-title"><span class="icon">📋</span> Campaign Directory</h2>
+                        <div class="campaign-list" id="merchant-campaign-list">
+                            <!-- Populated dynamically -->
+                        </div>
+                    </div>
+
+                    <!-- Settlement Reports -->
+                    <div class="glass-card mt-4">
+                        <h2 class="card-title"><span class="icon">💰</span> Settlement & Bank Fees</h2>
+                        <div class="table-container">
+                            <table class="synq-table">
+                                <thead>
+                                    <tr>
+                                        <th>Date</th>
+                                        <th>Redemption ID</th>
+                                        <th>Cashback Charge</th>
+                                        <th>Bank Fee</th>
+                                        <th>Total Invoice</th>
+                                        <th>Status</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="merchant-billing-body">
+                                    <!-- Populated dynamically -->
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================== -->
+        <!-- VIEW 2: CONSUMER APP SIMULATOR             -->
+        <!-- ========================================== -->
+        <section id="view-consumer" class="view-section">
+            <div class="consumer-split">
+                
+                <!-- Left: Phone Simulator Frame -->
+                <div class="phone-wrapper">
+                    <div class="phone-frame">
+                        <div class="phone-notch"></div>
+                        <div class="phone-screen">
+                            
+                            <!-- Phone Header -->
+                            <div class="phone-header">
+                                <div class="phone-app-name">RegionBank Pay</div>
+                                <div class="phone-user-select-box">
+                                    <select id="consumer-select" onchange="loadConsumerData()" class="phone-user-select">
+                                        <!-- Loaded dynamically -->
+                                    </select>
+                                </div>
+                            </div>
+                            
+                            <!-- Phone Card & Balance widget -->
+                            <div class="phone-balance-widget">
+                                <div class="card-layout">
+                                    <div class="card-chip"></div>
+                                    <div class="card-number">•••• •••• •••• 9840</div>
+                                    <div class="card-holder" id="phone-user-name">-</div>
+                                    <div class="card-type">REWARDS</div>
+                                </div>
+                                <div class="rewards-balance-row">
+                                    <div class="bal-col">
+                                        <div class="bal-label">Cashback Earned</div>
+                                        <div class="bal-value text-green" id="phone-cashback-value">$0.00</div>
+                                    </div>
+                                    <div class="bal-col text-right">
+                                        <div class="bal-label">Redemptions</div>
+                                        <div class="bal-value" id="phone-redemptions-value">0</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Offer Feed Tabs -->
+                            <div class="phone-tabs">
+                                <button class="tab-btn active" id="tab-rec" onclick="switchPhoneTab('recommended')">Recommended</button>
+                                <button class="tab-btn" id="tab-near" onclick="switchPhoneTab('nearby')">Nearby Map</button>
+                                <button class="tab-btn" id="tab-trend" onclick="switchPhoneTab('trending')">Trending</button>
+                            </div>
+
+                            <!-- Phone Offers Feed Container -->
+                            <div class="phone-content" id="phone-offers-feed">
+                                <!-- Offers populated dynamically -->
+                            </div>
+
+                            <!-- Phone Map Discovery Container (hidden by default) -->
+                            <div class="phone-content hidden" id="phone-map-container">
+                                <div class="map-header">
+                                    <span class="map-info">Select pins to activate nearby offers</span>
+                                    <div class="map-filters">
+                                        <button class="filter-chip active" onclick="filterMap('All')">All</button>
+                                        <button class="filter-chip" onclick="filterMap('Coffee')">Coffee</button>
+                                        <button class="filter-chip" onclick="filterMap('Dining')">Dining</button>
+                                    </div>
+                                </div>
+                                <div class="map-canvas-container">
+                                    <canvas id="deals-map-canvas" width="320" height="230"></canvas>
+                                </div>
+                                <div class="map-detail-card" id="map-pin-detail">
+                                    <div class="detail-placeholder">Tap a glowing map pin for store rewards</div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right: Card Transaction Swipe Simulator -->
+                <div class="swipe-simulator-box">
+                    <div class="glass-card">
+                        <h2 class="card-title"><span class="icon">💳</span> Card Transaction Simulator</h2>
+                        <p class="description-text">Simulate swiping your linked bank card at a local shop to trigger transaction matching and cashback settlement.</p>
+                        
+                        <form id="simulate-tx-form" onsubmit="handleSimulateTx(event)">
+                            <div class="form-group">
+                                <label for="sim-merchant">Select Merchant</label>
+                                <select id="sim-merchant" class="form-control">
+                                    <option value="Starbucks">Starbucks (Coffee Category)</option>
+                                    <option value="Olive Garden">Olive Garden (Dining Category)</option>
+                                    <option value="Target Store">Target Store (Retail Category)</option>
+                                    <option value="Planet Fitness">Planet Fitness (Fitness Category)</option>
+                                    <option value="Delta Air Lines">Delta Air Lines (Travel Category)</option>
+                                    <option value="Whole Foods">Whole Foods (Grocery Category)</option>
+                                    <option value="AMC Theatres">AMC Theatres (Entertainment Category)</option>
+                                    <option value="Best Buy">Best Buy (Electronics Category)</option>
+                                    <option value="Zara">Zara (Apparel Category)</option>
+                                    <option value="Chevron">Chevron (Gas & Automotive Category)</option>
+                                    <option value="Sephora">Sephora (Beauty & Wellness Category)</option>
+                                    <option value="Local Corner Shop">Local Corner Shop (Unknown Category)</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="sim-amount">Transaction Spend Amount ($)</label>
+                                <input type="number" step="0.01" id="sim-amount" class="form-control" value="12.50" required>
+                            </div>
+                            <button type="submit" class="btn btn-green btn-block">Swipe Linked Card</button>
+                        </form>
+                    </div>
+
+                    <!-- Matching & Settlement Console Log -->
+                    <div class="glass-card mt-4">
+                        <h2 class="card-title"><span class="icon">⚙️</span> Transaction Settlement Console</h2>
+                        <div class="terminal-box" id="tx-terminal">
+                            <div class="terminal-line text-muted">Ready to process swipe events.</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ========================================== -->
+        <!-- VIEW 3: BANK ADMIN & COMPLIANCE            -->
+        <!-- ========================================== -->
+        <section id="view-admin" class="view-section">
+            <div class="content-split">
+                
+                <!-- Left Column: Customer 360 viewer -->
+                <div class="split-col col-left">
+                    <div class="glass-card">
+                        <h2 class="card-title"><span class="icon">👤</span> Customer 360 Intelligence</h2>
+                        <div class="form-group">
+                            <label for="admin-customer-select">Select Customer Profile</label>
+                            <select id="admin-customer-select" onchange="loadCustomer360()" class="form-control">
+                                <!-- Loaded dynamically -->
+                            </select>
+                        </div>
+
+                        <!-- Customer Details -->
+                        <div class="customer-info-box" id="c360-info">
+                            <div class="c360-header">
+                                <div class="c360-name" id="c360-name">-</div>
+                                <div class="c360-email" id="c360-email">-</div>
+                            </div>
+                            
+                            <!-- Affinity Scores (Visualized bars) -->
+                            <div class="c360-section">
+                                <h3 class="section-subtitle">Affinities (AG-003 Customer Affinity Agent)</h3>
+                                <div class="affinity-list" id="c360-affinities">
+                                    <!-- Populated dynamically -->
+                                </div>
+                            </div>
+                            
+                            <!-- Preferences -->
+                            <div class="c360-section">
+                                <h3 class="section-subtitle">Consent Controls</h3>
+                                <div class="preferences-pill-container" id="c360-preferences">
+                                    <!-- Populated dynamically -->
+                                </div>
+                            </div>
+
+                            <!-- Transaction Stream -->
+                            <div class="c360-section">
+                                <h3 class="section-subtitle">Bank Card Transaction Stream</h3>
+                                <div class="history-list scroll-box" id="c360-transactions">
+                                    <!-- Populated dynamically -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column: Compliance Review Queue -->
+                <div class="split-col col-right">
+                    <div class="glass-card">
+                        <h2 class="card-title"><span class="icon">⚖️</span> Compliance Review Queue</h2>
+                        <p class="description-text">Manual oversight queue. View campaign copy and the automated compliance assessment generated by the AI agent.</p>
+                        
+                        <div class="compliance-queue-list" id="compliance-list">
+                            <!-- Populated dynamically -->
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ========================================== -->
+        <!-- VIEW 4: AI AGENTS CONSOLE / INSPECTOR      -->
+        <!-- ========================================== -->
+        <section id="view-console" class="view-section">
+            <div class="glass-card">
+                <div class="card-header-split">
+                    <div>
+                        <h2 class="card-title"><span class="icon">🧠</span> Synq AI Agents Inspector</h2>
+                        <p class="description-text">Real-time log of background AI agent reasoning loops, prompt payloads, and structured outputs.</p>
+                    </div>
+                    <div class="model-badge" id="current-llm-badge">
+                        Model: LLM Auto (Quick/Deep)
+                    </div>
+                </div>
+                
+                <div class="terminal-logs-container">
+                    <div class="agent-grid-summary">
+                        <div class="agent-card-indicator">
+                            <div class="agent-badge active">AG-001</div>
+                            <div class="agent-meta">
+                                <div class="agent-name">Merchant Campaign Agent</div>
+                                <div class="agent-out">Outputs proposals</div>
+                            </div>
+                        </div>
+                        <div class="agent-card-indicator">
+                            <div class="agent-badge active">AG-003</div>
+                            <div class="agent-meta">
+                                <div class="agent-name">Customer Affinity Agent</div>
+                                <div class="agent-out">Calculates affinities</div>
+                            </div>
+                        </div>
+                        <div class="agent-card-indicator">
+                            <div class="agent-badge active">AG-006</div>
+                            <div class="agent-meta">
+                                <div class="agent-name">Offer Ranking Agent</div>
+                                <div class="agent-out">Ranks feeds</div>
+                            </div>
+                        </div>
+                        <div class="agent-card-indicator">
+                            <div class="agent-badge active">AG-008</div>
+                            <div class="agent-meta">
+                                <div class="agent-name">Compliance Agent</div>
+                                <div class="agent-out">Validates copies</div>
+                            </div>
+                        </div>
+                        <div class="agent-card-indicator">
+                            <div class="agent-badge active">AG-010</div>
+                            <div class="agent-meta">
+                                <div class="agent-name">Customer Insights Agent</div>
+                                <div class="agent-out">Writes user copy</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="log-stream-header">Live Execution Stream</div>
+                    <div class="log-stream" id="agent-log-stream">
+                        <!-- Populated dynamically -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- AI Suggest Modal -->
+    <div class="modal-overlay" id="ai-modal">
+        <div class="modal-card glass-card">
+            <h3 class="modal-title">✨ AI Campaign Generation</h3>
+            <div class="form-group">
+                <label for="ai-goal-select">What is your primary business goal?</label>
+                <select id="ai-goal-select" class="form-control">
+                    <option value="Acquire new coffee customers from competitors">Acquire new coffee customers from competitors</option>
+                    <option value="Increase breakfast transaction counts during weekdays">Increase breakfast transaction counts during weekdays</option>
+                    <option value="Drive higher basket size dinners on weekends">Drive higher basket size dinners on weekends</option>
+                    <option value="Reward existing cardholders to boost retention">Reward existing cardholders to boost retention</option>
+                    <option value="Acquire new grocery shoppers and promote organic products">Acquire new grocery shoppers and promote organic products</option>
+                    <option value="Increase movie ticket sales and concession stand spend">Increase movie ticket sales and concession stand spend</option>
+                    <option value="Boost electronics sales on high-end gadgets and appliances">Boost electronics sales on high-end gadgets and appliances</option>
+                    <option value="Drive apparel sales for the upcoming seasonal collection">Drive apparel sales for the upcoming seasonal collection</option>
+                    <option value="Encourage fueling visits and convenience store purchases">Encourage fueling visits and convenience store purchases</option>
+                    <option value="Promote beauty and wellness services to new local clients">Promote beauty and wellness services to new local clients</option>
+                    <option value="Drive mid-week loyalty with special discount cashback incentives">Drive mid-week loyalty with special discount cashback incentives</option>
+                    <option value="Increase transaction count for health and fitness memberships">Increase transaction count for health and fitness memberships</option>
+                    <option value="Re-engage lapsed shoppers with premium personalized card-linked offers">Re-engage lapsed shoppers with premium personalized card-linked offers</option>
+                </select>
+            </div>
+            <div class="modal-actions">
+                <button class="btn btn-secondary" onclick="closeAIModal()">Cancel</button>
+                <button class="btn btn-sparkle" onclick="generateAICampaign()">
+                    <span class="sparkle-icon">✨</span> Generate Proposal
+                </button>
+            </div>
+            <div class="modal-loading hidden" id="modal-loader">
+                <div class="spinner"></div> Generating proposal details...
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="app.js?v=2"></script>
+</body>
+</html>
+
